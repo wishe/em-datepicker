@@ -1,17 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <emDatePicker
+      v-model="date"
+      :language="language"
+      inputClass="form-control"
+      wrapperClass="form-group">
+    </emDatePicker>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import emDatePicker from './components/emDatePicker.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld,
+    emDatePicker,
+  },
+  data() {
+    return {
+      date: {
+        from: '2019-01-01T22:09:39+0000',
+        to: '2019-12-31T22:09:39+0000',
+      },
+      language: 'nbNO',
+    };
   },
 };
 </script>
