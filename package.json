@@ -1,11 +1,13 @@
 {
   "name": "em-datepicker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A datepicker that combines two vuejs-datepickers to get a from and to date",
   "repository": "https://github.com/wishe/em-datepicker",
   "license": "MIT",
   "private": false,
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "author": {
     "name": "Alex Uleberg",
     "email": "auleberg@protonmail.com"
