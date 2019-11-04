@@ -116,7 +116,7 @@ export default {
     },
     setNextTenDays() {
       const date = new Date();
-      this.dateInput.from = new Date()
+      this.dateInput.from = new Date();
       this.dateInput.to = new Date(date.setDate(date.getDate() + 10));
     },
     setThisMonth() {
@@ -126,7 +126,7 @@ export default {
     },
     openDatepickerTo() {
       this.$refs.datepickerTo.showCalendar();
-    }
+    },
   },
   watch: {
     'dateInput.from': function (val) {

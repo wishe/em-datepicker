@@ -1,26 +1,34 @@
-# em-datepicker
+# EM-Datepicker
 
-## Project setup
-```
-yarn install
-```
+## Demo
+See a demo online: https://codesandbox.io/s/github/wishe/em-datepicker
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+To view a demo example locally clone the repo and run ```yarn install``` && ```yarn serve```
 
-### Compiles and minifies for production
+## Install
 ```
-yarn run build
+yarn add em-datepicker
 ```
 
-### Run your tests
 ```
-yarn run test
+import EmDatepicker from 'em-datepicker';
+
+export default {
+  // ...
+  components: {
+    EmDatepicker
+  }
+  // ...
+}
 ```
 
-### Lints and fixes files
-```
-yarn run lint
-```
+## Usage
+
+Coming soon
+
+### Props
+
+
+### Events
+
+## Languages

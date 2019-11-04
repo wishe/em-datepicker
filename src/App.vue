@@ -2,9 +2,7 @@
   <div id="app">
     <emDatePicker
       v-model="date"
-      :language="language"
-      inputClass="form-control"
-      wrapperClass="form-group">
+      :language="language">
     </emDatePicker>
   </div>
 </template>
