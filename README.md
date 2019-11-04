@@ -25,7 +25,7 @@ export default {
 Or from CDN
 
 ```
-<script src="https://unpkg.com/em-datepicker"></script>
+<script src="https://unpkg.com/em-datepicker@latest/dist/emDatepicker.umd.min.js"></script>
 ```
 
 ## Usage
