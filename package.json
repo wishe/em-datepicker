@@ -1,6 +1,6 @@
 {
   "name": "em-datepicker",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A datepicker that combines two vuejs-datepickers to get a from and to date",
   "repository": "https://github.com/wishe/em-datepicker",
   "license": "MIT",
