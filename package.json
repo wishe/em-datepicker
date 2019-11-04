@@ -16,7 +16,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build:npm": "vue-cli-service build --target lib --name emDatepicker ./src/emDatePicker.vue"
+    "build:npm": "vue-cli-service build --target lib --name emDatepicker ./src/components/emDatePicker.vue"
   },
   "main": "./dist/emDatepicker.common.js",
   "unpkg": "dist/emDatepicker.umd.min.js",

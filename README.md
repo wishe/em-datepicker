@@ -22,6 +22,12 @@ export default {
 }
 ```
 
+Or from CDN
+
+```
+<script src="https://unpkg.com/em-datepicker"></script>
+```
+
 ## Usage
 
 Coming soon
