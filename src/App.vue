@@ -2,7 +2,8 @@
   <div id="app">
     <emDatePicker
       v-model="date"
-      :language="language">
+      :language="language"
+      :disabled="disabledDates">
     </emDatePicker>
   </div>
 </template>
@@ -20,6 +21,9 @@ export default {
       date: {
         from: '2019-01-01T22:09:39+0000',
         to: '2019-12-31T22:09:39+0000',
+      },
+      disabledDates: {
+        daysOfMonth: [29, 30, 31],
       },
       language: 'nbNO',
     };

@@ -130,7 +130,6 @@ export default {
       this.$refs.datepickerTo.showCalendar();
     },
     closeDatepickerTo() {
-      console.log('Closing');
       this.$refs.datepickerTo.showCalendar();
     },
   },
