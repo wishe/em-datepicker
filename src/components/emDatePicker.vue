@@ -9,7 +9,9 @@
         :wrapper-class="wrapperClass"
         maximum-view="month"
         :language="languages.nbNO"
-        @selected="openDatepickerTo()">
+        @selected="openDatepickerTo()"
+        @opened="closeDatepickerTo()"
+        :disabled-dates="disabledDates">
         <template v-slot:beforeCalendarHeader>
           <div class="em-datepicker-buttons">
             <div
@@ -38,7 +40,8 @@
         :input-class="inputClass"
         :wrapper-class="wrapperClass"
         maximum-view="month"
-        :language="languages.nbNO">
+        :language="languages.nbNO"
+        :disabled-dates="disabledDates">
       </DatePicker>
     </div>
 </template>
@@ -52,10 +55,9 @@ export default {
   props: {
     value: Object,
     language: String,
-    disabled: Array,
+    disabled: Object,
     inputClass: String,
     wrapperClass: String,
-
   },
   components: {
     DatePicker,
@@ -90,6 +92,9 @@ export default {
     selectedLanguage() {
       return this.languages[this.language];
     },
+    disabledDates() {
+      return this.disabled;
+    },
   },
   methods: {
     // Check if date is a Date object or a Unix Timestamp before we set it
@@ -105,9 +110,6 @@ export default {
       } else {
         this.dateInput.to = new Date(this.value.to);
       }
-    },
-    // Set disabled dates based on props
-    setDisabledDates() {
     },
     setThisWeek() {
       const date = new Date();
@@ -125,6 +127,10 @@ export default {
       this.dateInput.to = new Date(date.getFullYear(), date.getMonth() + 1, 0);
     },
     openDatepickerTo() {
+      this.$refs.datepickerTo.showCalendar();
+    },
+    closeDatepickerTo() {
+      console.log('Closing');
       this.$refs.datepickerTo.showCalendar();
     },
   },
@@ -148,7 +154,6 @@ export default {
   },
   beforeMount() {
     this.setDates();
-    this.setDisabledDates();
   },
 };
 </script>
